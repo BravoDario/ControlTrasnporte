@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.utl.dsm.examendos.HelloController">
+   <children>
+      <Button layoutX="250.0" layoutY="127.0" mnemonicParsing="false" onAction="#crearBitacora" text="Guardar" />
+      <Label layoutX="54.0" layoutY="54.0" text="Conductor:" />
+      <TextField fx:id="nombreConductor" layoutX="54.0" layoutY="79.0" />
+      <TableView fx:id="tblBitacora" layoutX="14.0" layoutY="177.0" prefHeight="218.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="ColidBitacora" prefWidth="75.0" text="id Bitácora" />
+          <TableColumn fx:id="ColNombre" prefWidth="75.0" text="Nombre Conductor" />
+            <TableColumn fx:id="ColFecha" prefWidth="75.0" text="Fecha Registro" />
+            <TableColumn fx:id="ColPlaca" prefWidth="75.0" text="Placa" />
+            <TableColumn fx:id="colTicket" prefWidth="75.0" text="Último Boleto" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="54.0" layoutY="114.0" text="placa" />
+      <TextField fx:id="placa" layoutX="54.0" layoutY="139.0" />
+      <Label layoutX="250.0" layoutY="54.0" text="Último boleto" />
+      <TextField fx:id="lastTicket" layoutX="250.0" layoutY="79.0" />
+   </children>
+</AnchorPane>
